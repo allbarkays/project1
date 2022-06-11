@@ -23,4 +23,51 @@ Confirming Apache is running on the server
 ![Apache-running.PNG](./images/Apache-running.PNG)
 
 
+This line ending with 1 - 15/15 (END) appeared as an issue but entering *Q* solved it.
 
+
+I set up the outbound traffic on my AWS instance to any and ran the curl commands below:
+
+*curl http://localhost:80*
+
+Then I checked to confirm my web server installed and accessible, below is the confirmation page:
+
+
+![webServer.PNG](./images/webServer.PNG)
+
+
+used ‘apt’ to acquire and install this software with:
+
+`sudo apt install mysql-server`
+
+Got an alert for pending kernel upgrade so I did.
+
+![pendingKernelUpgrade.PNG](./images/pendingKernelUpgrade.PNG)
+
+
+Installed php and confirmed version
+
+![PhpVersion.PNG](./images/PhpVersion.PNG)
+
+I restarted my instance to ensure kernel is upgraded per the message I received earlier.
+
+
+
+I created *projectlamp* with `sudo mkdir /var/www/projectlamp` command
+
+completed project lamp and confirmed the html page loaded.
+
+![projectLAMPhtml.PNG](./images/projectLAMPhtml.PNG)
+
+
+I enabled php and changed the website form defaulting to html and set up php as its default
+
+`sudo vim /etc/apache2/mods-enabled/dir.conf`
+
+Reloaded apache `sudo systemctl reload apache2`
+
+and used this command to create a new php index file `vim /var/www/projectlamp/index.php` 
+
+The following loaded after refreshing the web page:
+
+![PHPpage.PNG](./images/PHPpage.PNG)
