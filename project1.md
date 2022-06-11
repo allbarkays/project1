@@ -71,3 +71,19 @@ and used this command to create a new php index file `vim /var/www/projectlamp/i
 The following loaded after refreshing the web page:
 
 ![PHPpage.PNG](./images/PHPpage.PNG)
+
+
+Summary
+Project 1 completed with the following:
+1. installing apache and updated the firewall
+2. installed MySql and Php
+3. Created virtual host for website using apache and enabled php on the website changing it from default html.
+
+The major challenge I experienced was installing the projectlamp.conf
+
+I got the error below several times before I edited with E
+
+![RemovingProjectLampSWP.PNG](./images/RemovingProjectLampSWP.PNG)
+
+
+![projectLamprecovery.PNG](./images/projectLamprecovery.PNG)
